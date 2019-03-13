@@ -1,10 +1,12 @@
+#telegram_get.py
 import telepot
+from definitions import IbConfig
 import time
 from telepot.loop import MessageLoop
 import random
 
 randnumber = random.randint(10000, 99999)
-bot = telepot.Bot('679545486:AAEbCBdedlJ1lxFXpN1a-J-6LfgFQ4cAp04')
+bot = telepot.Bot(IbConfig['telepotToken'])
 file = open("definitions.py", "w")
 print("Please send " + str(randnumber) + "to the bot")
 
